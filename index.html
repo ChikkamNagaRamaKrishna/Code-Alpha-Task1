@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Performance Questionnaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Academic Performance Questionnaire</h1>
+        <form id="performance-form">
+            <div class="form-group">
+                <label for="date">Date Submitted:</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="student-name">Student's Name:</label>
+                <input type="text" id="student-name" required>
+            </div>
+            <div class="form-group">
+                <label for="student-id">Student's ID:</label>
+                <input type="text" id="student-id" required>
+            </div>
+            <div class="form-group">
+                <label for="student-email">Student's Email:</label>
+                <input type="email" id="student-email" required>
+            </div>
+            <div class="form-group">
+                <label for="learning-outcomes">Learning Outcomes:</label>
+                <textarea id="learning-outcomes" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>How far is your home from school?</label>
+                <div class="rating">
+                    <ul>
+                        <li>
+                            <input type="radio" id="best-1" name="home-distance" value="Less than 1km"> 
+                            <label for="best-1">Less than 1km</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="best-2" name="home-distance" value="About 1 - 2 kms away">
+                            <label for="best-2">About 1 - 2 kms away</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="best-3" name="home-distance" value="About 3 - 4 kms away">
+                            <label for="best-3">About 3 - 4 kms away</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="best-4" name="home-distance" value="5 or more kms away">
+                            <label for="best-4">5 or more kms away</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>How often are you absent from school?</label>
+                <div class="rating">
+                    <ul>
+                        <li>
+                            <input type="radio" id="absent-1" name="absent-frequency" value="Never">
+                            <label for="absent-1">Never</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="absent-2" name="absent-frequency" value="About once a week">
+                            <label for="absent-2">About once a week</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="absent-3" name="absent-frequency" value="More than once a week">
+                            <label for="absent-3">More than once a week</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="absent-4" name="absent-frequency" value="Almost everyday">
+                            <label for="absent-4">Almost everyday</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Do you find time to do your studies at home?</label>
+                <div class="rating">
+                    <ul>
+                        <li>
+                            <input type="radio" id="study-time-1" name="study-time" value="I don't have any time">
+                            <label for="study-time-1">I don't have any time</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="study-time-2" name="study-time" value="Only about 1 to 2 hours">
+                            <label for="study-time-2">Only about 1 to 2 hours</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="study-time-3" name="study-time" value="More than 3 hours">
+                            <label for="study-time-3">More than 3 hours</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="study-time-4" name="study-time" value="Almost everyday">
+                            <label for="study-time-4">Almost everyday</label>
+                        </li>
+                    </ul>
+                </div>
+                <h2>Please rate each metric</h2>
+                <div class="form-group">
+                    <label>Education will help me to get a good job in the future:</label>
+                    <div class="likert-scale">
+                        <input type="radio" id="q1-strongly-agree" name="q1" value="Strongly Agree">
+                        <label for="q1-strongly-agree" class="likert-label">Strongly Agree</label>
+                        
+                        <input type="radio" id="q1-agree" name="q1" value="Agree">
+                        <label for="q1-agree" class="likert-label">Agree</label>
+                        
+                        <input type="radio" id="q1-neutral" name="q1" value="Neutral">
+                        <label for="q1-neutral" class="likert-label">Neutral</label>
+                        
+                        <input type="radio" id="q1-disagree" name="q1" value="Disagree">
+                        <label for="q1-disagree" class="likert-label">Disagree</label>
+                        
+                        <input type="radio" id="q1-strongly-disagree" name="q1" value="Strongly Disagree">
+                        <label for="q1-strongly-disagree" class="likert-label">Strongly Disagree</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>I need to work very hard to go to a national school:</label>
+                    <div class="likert-scale">
+                        <input type="radio" id="q2-strongly-agree" name="q2" value="Strongly Agree">
+                        <label for="q2-strongly-agree" class="likert-label">Strongly Agree</label>
+                        
+                        <input type="radio" id="q2-agree" name="q2" value="Agree">
+                        <label for="q2-agree" class="likert-label">Agree</label>
+                        
+                        <input type="radio" id="q2-neutral" name="q2" value="Neutral">
+                        <label for="q2-neutral" class="likert-label">Neutral</label>
+                        
+                        <input type="radio" id="q2-disagree" name="q2" value="Disagree">
+                        <label for="q2-disagree" class="likert-label">Disagree</label>
+                        
+                        <input type="radio" id="q2-strongly-disagree" name="q2" value="Strongly Disagree">
+                        <label for="q2-strongly-disagree" class="likert-label">Strongly Disagree</label>
+                    </div>
+                </div>
+<div class="form-group">
+    <label>My father and mother live harmoniously:</label>
+    <div class="likert-scale">
+        <input type="radio" id="q3-strongly-agree" name="q3" value="Strongly Agree">
+        <label for="q3-strongly-agree" class="likert-label">Strongly Agree</label>
+        
+        <input type="radio" id="q3-agree" name="q3" value="Agree">
+        <label for="q3-agree" class="likert-label">Agree</label>
+        
+        <input type="radio" id="q3-neutral" name="q3" value="Neutral">
+        <label for="q3-neutral" class="likert-label">Neutral</label>
+        
+        <input type="radio" id="q3-disagree" name="q3" value="Disagree">
+        <label for="q3-disagree" class="likert-label">Disagree</label>
+        
+        <input type="radio" id="q3-strongly-disagree" name="q3" value="Strongly Disagree">
+        <label for="q3-strongly-disagree" class="likert-label">Strongly Disagree</label>
+    </div>
+</div>
+
+<div class="form-group">
+    <label>My parents encourage me to work hard in my studies
+        :</label>
+    <div class="likert-scale">
+        <input type="radio" id="q4-strongly-agree" name="q4" value="Strongly Agree">
+        <label for="q4-strongly-agree" class="likert-label">Strongly Agree</label>
+        
+        <input type="radio" id="q4-agree" name="q4" value="Agree">
+        <label for="q4-agree" class="likert-label">Agree</label>
+        
+        <input type="radio" id="q4-neutral" name="q4" value="Neutral">
+        <label for="q4-neutral" class="likert-label">Neutral</label>
+        
+        <input type="radio" id="q4-disagree" name="q4" value="Disagree">
+        <label for="q4-disagree" class="likert-label">Disagree</label>
+        
+        <input type="radio" id="q4-strongly-disagree" name="q4" value="Strongly Disagree">
+        <label for="q4-strongly-disagree" class="likert-label">Strongly Disagree</label>
+    </div>
+</div>
+<div class="form-group">
+    <label>My parents encourage me to work hard in my studies
+        :</label>
+    <div class="likert-scale">
+        <input type="radio" id="q5-strongly-agree" name="q5" value="Strongly Agree">
+        <label for="q5-strongly-agree" class="likert-label">Strongly Agree</label>
+        
+        <input type="radio" id="q5-agree" name="q5" value="Agree">
+        <label for="q5-agree" class="likert-label">Agree</label>
+        
+        <input type="radio" id="q5-neutral" name="q5" value="Neutral">
+        <label for="q5-neutral" class="likert-label">Neutral</label>
+        
+        <input type="radio" id="q5-disagree" name="q5" value="Disagree">
+        <label for="q5-disagree" class="likert-label">Disagree</label>
+        
+        <input type="radio" id="q5-strongly-disagree" name="q5" value="Strongly Disagree">
+        <label for="q5-strongly-disagree" class="likert-label">Strongly Disagree</label>
+    </div>
+</div>
+<hr>
+<button type="submit">Submit Application</button>
+</form>
+    </div>
+</body>
+</html>
